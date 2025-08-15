@@ -128,7 +128,7 @@ Follow these instructions to get the project up and running on your local machin
 ### Prerequisites
 
 * **Node.js** (version 18 or higher)
-* **npm** or **yarn**
+* **bun** 
 
 ### Installation & Setup
 
@@ -144,18 +144,18 @@ Follow these instructions to get the project up and running on your local machin
 
 3.  **Install dependencies:**
     ```bash
-    npm install
+    bun install
     ```
 
 4.  **Set up environment variables:**
     Create a `.env` file in the `frontend` directory and add the URL for the backend API.
     ```
-    VITE_API_BASE_URL=http://localhost:5000/api
+    VITE_API_BASE_URL=http://backend-url/api
     ```
 
 5.  **Run the development server:**
     ```bash
-    npm run dev
+    bun run dev
     ```
     The application will be available at `http://localhost:5173` (or another port if 5173 is busy).
 
@@ -165,10 +165,10 @@ Follow these instructions to get the project up and running on your local machin
 
 In the `frontend` directory, you can run the following scripts:
 
-* `npm run dev`: Starts the development server with Hot Module Replacement (HMR).
-* `npm run build`: Bundles the app for production.
-* `npm run lint`: Runs the ESLint checker to find and fix problems in the code.
-* `npm run preview`: Starts a local server to preview the production build.
+* `bun run dev`: Starts the development server with Hot Module Replacement (HMR).
+* `bun run build`: Bundles the app for production.
+* `bun run lint`: Runs the ESLint checker to find and fix problems in the code.
+* `bun run preview`: Starts a local server to preview the production build.
 
 ---
 
