@@ -61,10 +61,68 @@ This project is built with a modern and robust technology stack to ensure a high
 
 The `src/` directory is organized to maintain a clean and scalable codebase:
 
+```
+Directory structure:
+└── grvmehto-18-no-dues-frontend/
+    ├── README.md
+    ├── package.json
+    └── frontend/
+        ├── README.md
+        ├── eslint.config.js
+        ├── index.html
+        ├── package.json
+        ├── tsconfig.app.json
+        ├── tsconfig.json
+        ├── tsconfig.node.json
+        ├── vite.config.ts
+        ├── src/
+        │   ├── App.css
+        │   ├── App.tsx
+        │   ├── index.css
+        │   ├── main.tsx
+        │   ├── vite-env.d.ts
+        │   ├── components/
+        │   │   ├── NoDueCertificateRequest.tsx
+        │   │   ├── StudentDuesStatus.tsx
+        │   │   └── Layout/
+        │   │       └── Layout.tsx
+        │   ├── constants/
+        │   │   └── departments.ts
+        │   ├── context/
+        │   │   └── AuthContext.tsx
+        │   ├── pages/
+        │   │   ├── Certificates.tsx
+        │   │   ├── Dashboard.tsx
+        │   │   ├── Departments.tsx
+        │   │   ├── Dues.tsx
+        │   │   ├── ForgetPassword.tsx
+        │   │   ├── Login.tsx
+        │   │   ├── NoDuesCertificate.tsx
+        │   │   ├── Profile.tsx
+        │   │   ├── ResetPassword.tsx
+        │   │   ├── Students.tsx
+        │   │   └── Users.tsx
+        │   ├── services/
+        │   │   ├── api.ts
+        │   │   ├── authService.ts
+        │   │   ├── certificateService.ts
+        │   │   ├── departmentService.ts
+        │   │   ├── dueService.ts
+        │   │   └── userService.ts
+        │   ├── theme/
+        │   │   └── index.ts
+        │   ├── types/
+        │   │   └── index.ts
+        │   └── utils/
+        │       └── auth.ts
+        └── .vite/
+            └── deps/
+                ├── _metadata.json
+                ├── package.json
+                ├── react.js
+                └── react_jsx-dev-runtime.js
 
-
-src/ ├── components/ # Reusable UI components (e.g., Layout, DataGrids) ├── constants/ # Application-wide constant values ├── context/ # React Context providers for global state (e.g., AuthContext) ├── pages/ # Top-level components for each application route (e.g., Dashboard, Login) ├── services/ # API communication layer (Axios setup and endpoint functions) ├── theme/ # MUI theme configuration ├── types/ # TypeScript type definitions and interfaces └── utils/ # Helper functions (e.g., auth token management)
----
+```
 
 ## Getting Started 🚀
 
